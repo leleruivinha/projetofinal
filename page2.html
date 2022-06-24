@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOGS</title>
+    <link rel="stylesheet" href="page2.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de Emprego</h1>
+        <p id="subtitulo">Coloque as informações abaixo:</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset> 
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Que tipo de projeto você deseja ?</strong></label>
+            <select id="senioridade" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Pessoal</option>
+              <option>Empresarial</option>
+              <option>Hobbie</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Deseja alguma linguagem especifica ?</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3"> JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4"> PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5"> C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6"> Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7"> Java</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+            <textarea rows="30" cols="90" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>   
+
+
+
+    <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Sobre Nós</h2>
+              <a href="/sign__up">Como trabalhamos</a> <a href="/">Depoimentos</a>
+              <a href="/">Carreira</a> <a href="/">Termos de serviço</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Fale Conosco</h2>
+              <a href="/">Contato</a> <a href="/">Suporte</a>
+              <a href="/">Destinos</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Videos</h2>
+              <a href="/">Envie Video</a> <a href="/">Embaixador</a>
+              <a href="/">Agencia</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Redes sociais</h2>
+              <a href="https://www.instagram.com/gabrielnmotta/">Instagram</a> <a href="https://www.linkedin.com/in/gabrielnogueirams/">Linkedin</a>
+              <a href="https://api.whatsapp.com/send?phone=5534997754838&text=Fale%20comigo">WhatsApp</a> <a href="https://github.com/gabrielnmotta">Github</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo">LRUIVA</a>
+            </div>
+            <p class="website__rights">© LRUIVA 2022. All rights reserved</p>
+            <div class="social__icons">
+              
+              <a href="https://www.instagram.com/gabrielnmotta/" class="social__icon--link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send?phone=5534997754838&text=Fale%20comigo" class="social__icon--link"
+                ><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/gabrielnogueirams/" class="social__icon--link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/gabrielnmotta" class="social__icon--link"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+</body>
+</html>
